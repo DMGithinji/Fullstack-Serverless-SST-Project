@@ -1,0 +1,6 @@
+{
+  "name": "notes",
+  "stage": "dev",
+  "region": "af-south-1",
+  "lint": true
+}
