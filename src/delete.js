@@ -9,7 +9,7 @@ export const main = handler(async (event) => {
     // - 'userId = :userId': only return items with matching 'userId'
     // partition key
     Key: {
-      userId: "123",
+      userId: event.requestContext.authorizer.iam.cognitoIdentity.identityId,
       noteId: event.pathParameters.id
     },
   };
